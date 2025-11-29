@@ -2,7 +2,7 @@
 
 export const personalInfo = {
 	name: "Sushmita Paul",
-	tagline: "Associate Machine Learning Engineer | Therap BD LTD",
+	tagline: "Machine Learning Engineer | Therap BD LTD",
 	email: "sushmitap247@gmail.com",
 	location: "Dhaka, Bangladesh",
 	linkedin: "https://www.linkedin.com/in/sushmita-paul-3b19741a4/",
@@ -11,7 +11,7 @@ export const personalInfo = {
 };
 
 export const bio = {
-	content: `I am an Associate Machine Learning Engineer at Therap BD LTD with a strong academic background in Computer Science and Engineering.
+	content: `I am a Machine Learning Engineer at Therap BD LTD with a strong academic background in Computer Science and Engineering.
 
   I completed my B.Sc. in Computer Science and Engineering with a CGPA of 3.80. Prior to that, I achieved a perfect GPA of 5.00 out of 5.00 in both my Secondary School Certificate (SSC) and Higher Secondary Certificate (HSC) examinations, ranking at the top among the girls of Chittagong Board in HSC.
 
@@ -109,7 +109,7 @@ export const updates = [
 	{
 		id: 2,
 		date: "April 6, 2025 - Present",
-		text: "Joined Therap BD LTD as an Associate Machine Learning Engineer"
+		text: "Joined Therap BD LTD as a Machine Learning Engineer"
 	},
 	{
 		id: 3,
@@ -176,7 +176,7 @@ export const cv = {
 	],
 	experience: [
 		{
-			title: "Associate Machine Learning Engineer",
+			title: "Machine Learning Engineer",
 			company: "Therap BD LTD",
 			year: "Apr 2025 - Present",
 			description: ""
