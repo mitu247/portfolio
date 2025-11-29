@@ -2,27 +2,21 @@
 
 export const personalInfo = {
   name: "Sushmita Paul",
-  tagline: "Software Engineer | Researcher | Developer",
-  email: "your.email@example.com",
-  location: "City, Country",
+  tagline: "Associate Machine Learning Engineer | Therap BD LTD",
+  email: "sushmitap247@gmail.com",
+  location: "Dhaka, Bangladesh",
   linkedin: "https://linkedin.com/in/yourprofile",
-  github: "https://github.com/yourusername",
+  github: "https://github.com/mitu247",
   twitter: "https://twitter.com/yourhandle",
   profileImage: "https://via.placeholder.com/200x200?text=Profile"
 };
 
 export const bio = {
-  content: `I am a passionate software engineer with expertise in full-stack development and machine learning. 
-  With over X years of experience in the tech industry, I have worked on various challenging projects 
-  ranging from web applications to complex data analysis systems.
+  content: `I am an Associate Machine Learning Engineer at Therap BD LTD with a strong academic background in Computer Science and Engineering.
 
-  My journey in technology began during my undergraduate studies, where I developed a deep interest 
-  in computer science and its applications. Since then, I have continuously expanded my knowledge 
-  and skills, staying up-to-date with the latest technologies and best practices.
+  I completed my B.Sc. in Computer Science and Engineering with a CGPA of 3.80. Prior to that, I achieved a perfect GPA of 5.00 out of 5.00 in both my Secondary School Certificate (SSC) and Higher Secondary Certificate (HSC) examinations, ranking at the top among the girls of Chittagong Board in HSC.
 
-  I believe in writing clean, maintainable code and creating user-friendly applications that make 
-  a positive impact. When I'm not coding, you can find me exploring new technologies, contributing 
-  to open-source projects, or sharing knowledge through technical blogs and talks.`
+  I am passionate about machine learning and its applications, constantly working to expand my knowledge and skills in this exciting field.`
 };
 
 export const projects = [
@@ -181,28 +175,28 @@ export const updates = [
 export const cv = {
   education: [
     {
-      degree: "B.Sc. in Engineering",
+      degree: "B.Sc. in Computer Science and Engineering",
       institution: "Bangladesh University of Engineering and Technology",
       year: "2020 - 2025",
-      description: "Graduated in March, 2025"
+      description: "Graduated in March, 2025 with CGPA 3.80"
     },
     {
       degree: "Higher Secondary Certificate (HSC)",
       institution: "Chittagong College",
       year: "2017 - 2019",
-      description: ""
+      description: "GPA 5.00 out of 5.00 - Ranked top among the girls of Chittagong Board"
     },
     {
       degree: "Secondary School Certificate (SSC)",
       institution: "Cox's Bazar Govt. Girls High School",
       year: "2012 - 2017",
-      description: ""
+      description: "GPA 5.00 out of 5.00"
     }
   ],
   experience: [
     {
       title: "Associate Machine Learning Engineer",
-      company: "THERAP BD LTD.",
+      company: "Therap BD LTD",
       year: "Apr 2025 - Present",
       description: ""
     }
