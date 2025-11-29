@@ -28,19 +28,10 @@ const Footer = () => {
                 href={personalInfo.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="footer-social-icon me-3"
+                className="footer-social-icon"
                 aria-label="LinkedIn"
               >
                 LinkedIn
-              </a>
-              <a
-                href={personalInfo.twitter}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="footer-social-icon"
-                aria-label="Twitter"
-              >
-                Twitter
               </a>
             </div>
           </div>

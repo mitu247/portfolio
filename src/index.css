@@ -4,6 +4,8 @@
   --primary-blue-dark: #004499;
   --primary-blue-light: #e6f0ff;
   --accent-red: #dc3545;
+  --accent-pink: #e91e63;
+  --accent-pink-light: #fce4ec;
   --white: #ffffff;
   --light-gray: #f8f9fa;
   --dark-gray: #343a40;
@@ -28,16 +30,16 @@ body {
 .header-section {
   background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
   color: var(--white);
-  padding: 60px 0;
+  padding: 40px 0;
   text-align: center;
 }
 
 .header-name {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 700;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-family: 'Georgia', serif;
 }
 
@@ -81,7 +83,7 @@ body {
 
 /* Section Styles */
 .section {
-  padding: 80px 0;
+  padding: 50px 0;
 }
 
 .section:nth-child(even) {
@@ -89,10 +91,10 @@ body {
 }
 
 .section-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--primary-blue);
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   text-align: center;
   position: relative;
 }
@@ -102,8 +104,8 @@ body {
   display: block;
   width: 60px;
   height: 4px;
-  background-color: var(--accent-red);
-  margin: 15px auto 0;
+  background: linear-gradient(90deg, var(--accent-pink) 0%, var(--primary-blue) 100%);
+  margin: 12px auto 0;
   border-radius: 2px;
 }
 
@@ -204,7 +206,7 @@ body {
   top: 5px;
   width: 12px;
   height: 12px;
-  background-color: var(--accent-red);
+  background-color: var(--accent-pink);
   border-radius: 50%;
 }
 
@@ -259,11 +261,11 @@ body {
 /* Research Section */
 .publication-item {
   background-color: var(--white);
-  border-radius: 10px;
-  padding: 25px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-  border-left: 4px solid var(--primary-blue);
+  border-radius: 8px;
+  padding: 18px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid var(--accent-pink);
 }
 
 .publication-title {
@@ -286,13 +288,16 @@ body {
 /* Interests Section */
 .interest-item {
   text-align: center;
-  padding: 30px 20px;
+  padding: 20px 15px;
 }
 
 .interest-icon {
-  font-size: 3rem;
-  color: var(--primary-blue);
-  margin-bottom: 15px;
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, var(--accent-pink) 0%, var(--primary-blue) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 12px;
 }
 
 .interest-title {
