@@ -1,7 +1,7 @@
 // Dummy data for portfolio - Replace with your actual information
 
 export const personalInfo = {
-  name: "Your Name",
+  name: "Sushmita Paul",
   tagline: "Software Engineer | Researcher | Developer",
   email: "your.email@example.com",
   location: "City, Country",
@@ -181,36 +181,30 @@ export const updates = [
 export const cv = {
   education: [
     {
-      degree: "Ph.D. in Computer Science",
-      institution: "University Name",
-      year: "2020 - Present",
-      description: "Research focus on Machine Learning and Natural Language Processing"
+      degree: "B.Sc. in Engineering",
+      institution: "Bangladesh University of Engineering and Technology",
+      year: "2020 - 2025",
+      description: "Graduated in March, 2025"
     },
     {
-      degree: "M.S. in Computer Science",
-      institution: "University Name",
-      year: "2018 - 2020",
-      description: "Thesis: Deep Learning for Text Classification"
+      degree: "Higher Secondary Certificate (HSC)",
+      institution: "Chittagong College",
+      year: "2017 - 2019",
+      description: ""
     },
     {
-      degree: "B.S. in Computer Science",
-      institution: "University Name",
-      year: "2014 - 2018",
-      description: "Graduated with Honors"
+      degree: "Secondary School Certificate (SSC)",
+      institution: "Cox's Bazar Govt. Girls High School",
+      year: "2012 - 2017",
+      description: ""
     }
   ],
   experience: [
     {
-      title: "Software Engineer",
-      company: "Tech Company ABC",
-      year: "2020 - Present",
-      description: "Full-stack development, system design, and team leadership"
-    },
-    {
-      title: "Research Intern",
-      company: "Research Lab XYZ",
-      year: "Summer 2019",
-      description: "Machine learning research and model development"
+      title: "Associate Machine Learning Engineer",
+      company: "THERAP BD LTD.",
+      year: "Apr 2025 - Present",
+      description: ""
     }
   ],
   skills: [
