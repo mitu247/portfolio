@@ -11,11 +11,7 @@ export const personalInfo = {
 };
 
 export const bio = {
-	content: `I am a Machine Learning Engineer at Therap BD LTD with a strong academic background in Computer Science and Engineering.
-
-  I completed my B.Sc. in Computer Science and Engineering with a CGPA of 3.80. Prior to that, I achieved a perfect GPA of 5.00 out of 5.00 in both my Secondary School Certificate (SSC) and Higher Secondary Certificate (HSC) examinations, ranking at the top among the girls of Chittagong Board in HSC.
-
-  I am passionate about machine learning and its applications, constantly working to expand my knowledge and skills in this exciting field.`
+	content: `I am a Machine Learning Engineer at Therap BD LTD with a strong academic background in Computer Science and Engineering. I completed my Bachelors from Bangladesh University of Engineering and technology with a CGPA of 3.80. Prior to that, I achieved a perfect GPA of 5.00 out of 5.00 in both my Secondary School Certificate (SSC) and Higher Secondary Certificate (HSC) examinations, ranking at the top among the girls of Chittagong Board in HSC. I am passionate about machine learning and its applications, constantly working to expand my knowledge and skills in this exciting field.`
 };
 
 export const projects = [
