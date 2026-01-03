@@ -20,7 +20,7 @@ export const projects = [
 		title: "EduByte: AI-Enhanced E-Learning Platform",
 		description: "Full-stack e-learning platform with personalized course recommendations, GPT-based chatbot, and AI-powered examination system.",
 		technologies: ["React", "Node.js", "Express", "PostgreSQL", "Bootstrap"],
-		link: "#",
+		link: "https://github.com/EduByte-BUET/EduByte-CSE-408-Software-Engineering-Sessional",
 		demo: null
 	},
 	{
@@ -28,7 +28,55 @@ export const projects = [
 		title: "Football Player Database Management System",
 		description: "Java-based system to manage football player records with multi-attribute search and data persistence.",
 		technologies: ["Java", "SQL"],
-		link: "#",
+		link: "https://github.com/mitu247/Java-Term-Project-108",
+		demo: null
+	},
+	{
+		id: 3,
+		title: "Computer Security",
+		description: "A comprehensive study and documentation of cryptographic protocols and network security vulnerabilities. Analyzed various attack vectors and proposed mitigation strategies using standard security models.",
+		technologies: ["TeX"],
+		link: "https://github.com/mitu247/Computer-Security-406",
+		demo: null
+	},
+	{
+		id: 4,
+		title: "Operating Systems",
+		description: "Implemented core operating system components including process scheduling algorithms and memory management units. Simulating concurrency control mechanisms and inter-process communication using C++.",
+		technologies: ["C++"],
+		link: "https://github.com/mitu247/Operating-Systems-314",
+		demo: null
+	},
+	{
+		id: 5,
+		title: "Computer Networks",
+		description: "Developed valid network protocols and simulation environments to analyze data packet transmission. Implemented socket programming interfaces to demonstrate TCP/UDP communication models.",
+		technologies: ["C++"],
+		link: "https://github.com/mitu247/Computer-Network-322",
+		demo: null
+	},
+	{
+		id: 6,
+		title: "Computer Graphics",
+		description: "Built 2D/3D rendering engines demonstrating geometric transformations, shading, and lighting effects. Implemented algorithms for ray tracing and rasterization to visualize complex scenes.",
+		technologies: ["C++"],
+		link: "https://github.com/mitu247/Computer-Graphics-410",
+		demo: null
+	},
+	{
+		id: 7,
+		title: "Compiler Design",
+		description: "Designed a lexical analyzer and parser for a custom programming language subset using Yacc and Lex. Implemented symbol table management and intermediate code generation phases.",
+		technologies: ["Yacc"],
+		link: "https://github.com/mitu247/Compiler-310",
+		demo: null
+	},
+	{
+		id: 8,
+		title: "Artificial Intelligence",
+		description: "Implemented classic AI search algorithms including A* and minimax for game-playing agents. Developed constraint satisfaction problem solvers and heuristic-based optimization logic.",
+		technologies: ["Java"],
+		link: "https://github.com/mitu247/Artificial-Intelligence-318",
 		demo: null
 	}
 ];
@@ -40,7 +88,7 @@ export const research = [
 		authors: "Undergraduate Thesis Research",
 		venue: "Bangladesh University of Engineering and Technology",
 		abstract: "Developed automated computer vision system for identifying dengue breeding sites from UAV-captured aerial orthophotos. Evaluated state-of-the-art detection and segmentation models (YOLOv8, YOLOv11, SAM, SegGPT) on custom-annotated dataset. Designed geospatial data analysis pipeline for precise breeding site localization using GPS coordinates, achieving 83.6% balanced accuracy.",
-		link: "#",
+		link: "https://github.com/excellencior/Dengue-Breeding-Site-Identification",
 		year: "2023 – 2025"
 	},
 	{
@@ -49,7 +97,7 @@ export const research = [
 		authors: "Course Project",
 		venue: "Machine Learning Course, BUET",
 		abstract: "Fine-tuned SAM2 and SwinUNETR for lung nodule segmentation and a pre-trained Faster R-CNN for nodule detection on the LIDC-IDRI dataset. Utilized point-prompt and sliding-window pipelines with hybrid loss functions. Achieved Dice score of 0.93, Precision of 0.96, and Recall of 0.89.",
-		link: "#",
+		link: "https://github.com/mitu247/ML-Project-472",
 		year: "2025"
 	},
 	{
