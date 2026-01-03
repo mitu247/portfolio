@@ -37,8 +37,8 @@ const Research = () => {
                     View Paper
                   </a>
                 ) : (
-                  <span className="text-secondary small fst-italic">
-                    Not published yet
+                  <span className="btn btn-sm btn-outline-secondary disabled">
+                    Not Shareable
                   </span>
                 )}
               </div>

@@ -21,14 +21,20 @@ const Projects = () => {
                     ))}
                   </div>
                   <div className="mt-auto">
-                    <a
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn btn-outline-primary btn-sm me-2"
-                    >
-                      View Code
-                    </a>
+                    {project.link && project.link !== "#" ? (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-outline-primary btn-sm me-2"
+                      >
+                        View Code
+                      </a>
+                    ) : (
+                      <span className="btn btn-sm btn-outline-secondary disabled me-2">
+                        Not Shareable
+                      </span>
+                    )}
                     {project.demo && (
                       <a
                         href={project.demo}
