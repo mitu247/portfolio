@@ -1,16 +1,23 @@
-/* Custom CSS for Portfolio */
+/* Academic Portfolio — Professional & Scholarly Design */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
 :root {
-  --primary-blue: #0066cc;
-  --primary-blue-dark: #004499;
-  --primary-blue-light: #e6f0ff;
-  --accent-red: #dc3545;
-  --accent-pink: #e91e63;
-  --accent-pink-light: #fce4ec;
+  --navy: #1b2a4a;
+  --navy-dark: #0f1b33;
+  --navy-light: #2d4a7a;
+  --slate: #475569;
+  --slate-light: #64748b;
+  --cream: #faf8f5;
+  --cream-dark: #f1ede8;
+  --warm-white: #fefdfb;
+  --accent-burgundy: #8b2252;
+  --accent-teal: #0d7377;
+  --accent-gold: #b8860b;
+  --border-light: #e8e4df;
+  --text-primary: #1a1a2e;
+  --text-secondary: #4a4a5a;
+  --text-muted: #7a7a8a;
   --white: #ffffff;
-  --light-gray: #f8f9fa;
-  --dark-gray: #343a40;
-  --text-dark: #212529;
-  --text-muted: #6c757d;
 }
 
 * {
@@ -20,225 +27,335 @@
 }
 
 body {
-  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  background-color: var(--white);
-  color: var(--text-dark);
-  line-height: 1.6;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: var(--warm-white);
+  color: var(--text-primary);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Header Styles */
+/* Header — Clean Academic Banner */
 .header-section {
-  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
+  background: var(--navy);
   color: var(--white);
-  padding: 40px 0;
+  padding: 56px 0 48px;
   text-align: center;
+  border-bottom: 4px solid var(--accent-gold);
 }
 
 .header-name {
-  font-size: 3rem;
+  font-family: 'Crimson Pro', Georgia, 'Times New Roman', serif;
+  font-size: 2.8rem;
   font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  letter-spacing: 1.5px;
   margin-bottom: 8px;
-  font-family: 'Georgia', serif;
+  color: var(--white);
 }
 
 .header-tagline {
-  font-size: 1.2rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
   font-weight: 300;
-  opacity: 0.9;
+  opacity: 0.85;
+  letter-spacing: 0.5px;
 }
 
-/* Navbar Styles */
+/* Navbar — Clean & Understated */
 .navbar {
   background-color: var(--white) !important;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 15px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-light);
 }
 
 .navbar-brand {
+  font-family: 'Crimson Pro', Georgia, serif;
   font-weight: 700;
-  color: var(--primary-blue) !important;
-  font-size: 1.5rem;
+  color: var(--navy) !important;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
 }
 
 .nav-link {
-  color: var(--text-dark) !important;
+  font-family: 'Inter', sans-serif;
+  color: var(--text-secondary) !important;
   font-weight: 500;
-  margin: 0 10px;
-  padding: 8px 16px !important;
-  border-radius: 5px;
-  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  margin: 0 4px;
+  padding: 6px 14px !important;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  letter-spacing: 0.3px;
 }
 
 .nav-link:hover {
-  background-color: var(--primary-blue-light);
-  color: var(--primary-blue) !important;
+  background-color: var(--cream);
+  color: var(--navy) !important;
 }
 
 .nav-link.active {
-  background-color: var(--primary-blue);
+  background-color: var(--navy);
   color: var(--white) !important;
 }
 
-/* Section Styles */
+/* Section Styles — Generous Spacing */
 .section {
-  padding: 50px 0;
+  padding: 64px 0;
 }
 
 .section:nth-child(even) {
-  background-color: var(--light-gray);
+  background-color: var(--cream);
 }
 
 .section-title {
+  font-family: 'Crimson Pro', Georgia, serif;
   font-size: 2rem;
-  font-weight: 700;
-  color: var(--primary-blue);
-  margin-bottom: 30px;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 36px;
   text-align: center;
   position: relative;
+  letter-spacing: 0.5px;
 }
 
 .section-title::after {
   content: '';
   display: block;
-  width: 60px;
-  height: 4px;
-  background: linear-gradient(90deg, var(--accent-pink) 0%, var(--primary-blue) 100%);
-  margin: 12px auto 0;
+  width: 50px;
+  height: 3px;
+  background: var(--accent-gold);
+  margin: 14px auto 0;
   border-radius: 2px;
 }
 
-/* Card Styles */
+/* Card Styles — Clean with Subtle Depth */
 .card {
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   height: 100%;
+  background-color: var(--white);
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
 .card-title {
-  color: var(--primary-blue);
+  font-family: 'Crimson Pro', Georgia, serif;
+  color: var(--navy);
   font-weight: 600;
+  font-size: 1.15rem;
 }
 
 .card-text {
-  color: var(--text-muted);
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+/* Featured Project Styles — Personal ML Explorations */
+.featured-projects-label {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.featured-badge {
+  display: inline-block;
+  background: var(--navy);
+  color: var(--white);
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--accent-gold);
+}
+
+.academic-badge {
+  display: inline-block;
+  background-color: var(--cream-dark);
+  color: var(--slate);
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.featured-card {
+  border: 1px solid var(--border-light);
+  border-left: 4px solid var(--accent-teal);
+  position: relative;
+  overflow: hidden;
+  background-color: var(--white);
+}
+
+.featured-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-teal) 0%, var(--navy-light) 100%);
+}
+
+.featured-card:hover {
+  box-shadow: 0 6px 24px rgba(13, 115, 119, 0.1), 0 4px 12px rgba(0, 0, 0, 0.06);
+  border-left-color: var(--accent-teal);
+}
+
+.featured-star {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+
+.badge-highlight {
+  background-color: rgba(13, 115, 119, 0.08);
+  color: var(--accent-teal);
+  padding: 3px 10px;
+  border-radius: 3px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  border: 1px solid rgba(13, 115, 119, 0.15);
+  letter-spacing: 0.3px;
 }
 
 /* Badge Styles */
 .badge-custom {
-  background-color: var(--primary-blue-light);
-  color: var(--primary-blue);
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 0.85rem;
+  background-color: var(--cream);
+  color: var(--slate);
+  padding: 5px 11px;
+  border-radius: 3px;
+  font-size: 0.8rem;
   font-weight: 500;
-  margin: 3px;
+  font-family: 'Inter', sans-serif;
+  margin: 2px;
+  border: 1px solid var(--border-light);
 }
 
 /* Button Styles */
 .btn-primary {
-  background-color: var(--primary-blue);
-  border-color: var(--primary-blue);
+  background-color: var(--navy);
+  border-color: var(--navy);
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: 0.3px;
 }
 
 .btn-primary:hover {
-  background-color: var(--primary-blue-dark);
-  border-color: var(--primary-blue-dark);
+  background-color: var(--navy-dark);
+  border-color: var(--navy-dark);
 }
 
 .btn-outline-primary {
-  color: var(--primary-blue);
-  border-color: var(--primary-blue);
+  color: var(--navy);
+  border-color: var(--navy);
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 0.85rem;
 }
 
 .btn-outline-primary:hover {
-  background-color: var(--primary-blue);
-  border-color: var(--primary-blue);
+  background-color: var(--navy);
+  border-color: var(--navy);
 }
 
 .btn-accent {
-  background-color: var(--accent-red);
-  border-color: var(--accent-red);
+  background-color: var(--accent-burgundy);
+  border-color: var(--accent-burgundy);
   color: var(--white);
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
 }
 
 .btn-accent:hover {
-  background-color: #c82333;
-  border-color: #c82333;
+  background-color: #6e1a42;
+  border-color: #6e1a42;
   color: var(--white);
 }
 
 /* Bio Section */
 .bio-image {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  border: 5px solid var(--primary-blue);
-  box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
+  border: 4px solid var(--navy);
+  box-shadow: 0 4px 16px rgba(27, 42, 74, 0.15);
 }
 
 .bio-content {
-  font-size: 1.1rem;
+  font-size: 1.02rem;
   line-height: 1.8;
+  color: var(--text-secondary);
 }
 
-/* Updates Section */
+/* Updates Section — Timeline */
 .update-item {
-  border-left: 4px solid var(--primary-blue);
+  border-left: 3px solid var(--navy);
   padding-left: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   position: relative;
 }
 
 .update-item::before {
   content: '';
   position: absolute;
-  left: -8px;
-  top: 5px;
-  width: 12px;
-  height: 12px;
-  background-color: var(--accent-pink);
+  left: -7px;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--accent-gold);
   border-radius: 50%;
+  border: 2px solid var(--white);
 }
 
 .update-date {
-  color: var(--primary-blue);
+  font-family: 'Inter', sans-serif;
+  color: var(--navy);
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.3px;
 }
 
 .update-text {
-  color: var(--text-dark);
-  margin-top: 5px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+  font-size: 0.95rem;
 }
 
 /* CV Section */
 .cv-download-btn {
-  font-size: 1.1rem;
-  padding: 15px 40px;
-  border-radius: 30px;
+  font-size: 1rem;
+  padding: 14px 36px;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
 }
 
-/* Footer Styles */
+/* Footer — Scholarly */
 .footer {
-  background: linear-gradient(135deg, var(--primary-blue-dark) 0%, var(--primary-blue) 100%);
+  background: var(--navy-dark);
   color: var(--white);
   padding: 40px 0 20px;
+  border-top: 3px solid var(--accent-gold);
 }
 
 .footer a {
   color: var(--white);
   opacity: 0.8;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.2s ease;
+  text-decoration: none;
 }
 
 .footer a:hover {
@@ -247,68 +364,78 @@ body {
 }
 
 .footer-social-icon {
-  font-size: 1.5rem;
-  margin: 0 10px;
+  font-size: 1rem;
+  margin: 0 8px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
 }
 
 .footer-copyright {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
   padding-top: 20px;
   margin-top: 20px;
-  opacity: 0.8;
+  opacity: 0.7;
+  font-size: 0.85rem;
 }
 
 /* Research Section */
 .publication-item {
   background-color: var(--white);
-  border-radius: 8px;
-  padding: 18px;
-  margin-bottom: 16px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  border-left: 4px solid var(--accent-pink);
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 18px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid var(--accent-burgundy);
+  border: 1px solid var(--border-light);
+  border-left: 4px solid var(--accent-burgundy);
 }
 
 .publication-title {
+  font-family: 'Crimson Pro', Georgia, serif;
   font-weight: 600;
-  color: var(--text-dark);
+  color: var(--text-primary);
   margin-bottom: 10px;
+  font-size: 1.1rem;
 }
 
 .publication-authors {
   color: var(--text-muted);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  font-style: italic;
 }
 
 .publication-venue {
-  color: var(--primary-blue);
+  color: var(--accent-teal);
   font-style: italic;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
+  font-weight: 500;
 }
 
 /* Interests Section */
 .interest-item {
   text-align: center;
-  padding: 20px 15px;
+  padding: 24px 16px;
 }
 
 .interest-icon {
-  font-size: 2.5rem;
-  background: linear-gradient(135deg, var(--accent-pink) 0%, var(--primary-blue) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 12px;
+  font-size: 2.2rem;
+  color: var(--navy);
+  margin-bottom: 14px;
+  -webkit-text-fill-color: var(--navy);
 }
 
 .interest-title {
+  font-family: 'Crimson Pro', Georgia, serif;
   font-weight: 600;
-  color: var(--text-dark);
+  color: var(--text-primary);
   margin-bottom: 10px;
+  font-size: 1.05rem;
 }
 
 .interest-description {
   color: var(--text-muted);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
 }
 
 /* Smooth Scrolling */
@@ -319,14 +446,14 @@ html {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .header-name {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
-  
+
   .section {
-    padding: 50px 0;
+    padding: 48px 0;
   }
-  
+
   .section-title {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 }

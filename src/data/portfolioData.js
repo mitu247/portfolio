@@ -1,4 +1,4 @@
-// Dummy data for portfolio - Replace with your actual information
+// Portfolio data
 
 export const personalInfo = {
 	name: "Sushmita Paul",
@@ -11,8 +11,38 @@ export const personalInfo = {
 };
 
 export const bio = {
-	content: `I am a Machine Learning Engineer at Therap BD LTD with a strong academic background in Computer Science and Engineering. I completed my Bachelors from Bangladesh University of Engineering and technology with a CGPA of 3.80. Prior to that, I achieved a perfect GPA of 5.00 out of 5.00 in both my Secondary School Certificate (SSC) and Higher Secondary Certificate (HSC) examinations, ranking at the top among the girls of Chittagong Board in HSC. I am passionate about machine learning and its applications, constantly working to expand my knowledge and skills in this exciting field.`
+	content: `I am a Machine Learning Engineer at Therap BD LTD with a strong academic background in Computer Science and Engineering. I completed my Bachelors from Bangladesh University of Engineering and Technology with a CGPA of 3.80. Prior to that, I achieved a perfect GPA of 5.00 out of 5.00 in both my Secondary School Certificate (SSC) and Higher Secondary Certificate (HSC) examinations, ranking at the top among the girls of Chittagong Board in HSC. I am passionate about machine learning and its applications, constantly working to expand my knowledge and skills in this exciting field.`
 };
+
+export const professionalProjects = [
+	{
+		id: 1,
+		title: "Graph Reasoning on NLGraph",
+		description: "Evaluated LLM reasoning capabilities on graph-theory problems from the NLGraph benchmark. Built a multi-round code-verification harness with sandboxed Python execution and hallucination guards using DeepSeek and Qwen models.",
+		technologies: ["Python", "vLLM", "DeepSeek-R1", "Qwen3.5", "NetworkX"],
+		highlights: ["Chain-of-Thought Prompting", "Code-Augmented Verification", "Sandboxed Execution"],
+		link: "https://github.com/mitu247/Graph_Reasoning_NLGraph",
+		demo: null
+	},
+	{
+		id: 2,
+		title: "Multi-Label Academic Paper Classification",
+		description: "End-to-end ML pipeline for classifying paper abstracts into 6 scientific categories. Includes QLoRA fine-tuning of Llama & Mistral, ModernBERT with W&B Bayesian sweeps, and synthetic data augmentation using Gemma.",
+		technologies: ["PyTorch", "Transformers", "QLoRA", "W&B", "ModernBERT", "Gemma"],
+		highlights: ["Hyperparameter Sweeping", "Synthetic Data Generation", "Custom StoppingCriteria"],
+		link: "https://github.com/mitu247/MultiLabel-Paper-Classification",
+		demo: null
+	},
+	{
+		id: 3,
+		title: "RAG vs Fine-Tuning",
+		description: "Comparative analysis of Retrieval-Augmented Generation vs Supervised Fine-Tuning for succinct Q&A using Gemma-3-27b-it. Fine-tuned model achieved 2x improvement over RAG on all ROUGE metrics.",
+		technologies: ["Gemma-3", "FAISS", "QLoRA", "SFTTrainer", "DeepEval"],
+		highlights: ["ROUGE-1: 0.607 (SFT) vs 0.301 (RAG)", "Vector Search Pipeline", "Style Alignment Analysis"],
+		link: "https://github.com/mitu247/RAG-vs-FineTuning",
+		demo: null
+	}
+];
 
 export const projects = [
 	{
@@ -223,11 +253,11 @@ export const cv = {
 			title: "Machine Learning Engineer",
 			company: "Therap BD LTD",
 			year: "Apr 2025 - Present",
-			description: ""
+			description: "Working on LLM evaluation, fine-tuning, and deployment pipelines. Exploring graph reasoning with Chain-of-Thought prompting, multi-label text classification using QLoRA and ModernBERT, and comparative studies of RAG vs supervised fine-tuning approaches."
 		}
 	],
 	skills: [
-		"Python", "PyTorch", "TensorFlow", "NVIDIA Jetson", "Git", "Docker"
+		"Python", "PyTorch", "Transformers", "vLLM", "QLoRA", "FAISS", "TensorFlow", "NVIDIA Jetson", "Weights & Biases", "Git", "Docker"
 	],
 	downloadLink: "/CV.pdf",
 	about: "I am currently working as a machine learning engineer and open to collaborations on interesting topics that include machine learning / applications or systems in general."
