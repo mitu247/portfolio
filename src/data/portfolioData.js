@@ -253,7 +253,7 @@ export const cv = {
 			title: "Machine Learning Engineer",
 			company: "Therap BD LTD",
 			year: "Apr 2025 - Present",
-			description: "Working on LLM evaluation, fine-tuning, and deployment pipelines. Exploring graph reasoning with Chain-of-Thought prompting, multi-label text classification using QLoRA and ModernBERT, and comparative studies of RAG vs supervised fine-tuning approaches."
+			description: "Working on LLM evaluation, fine-tuning, and deployment pipelines. Engineered and deployed real-time person masking models for video streams on NVIDIA Jetson, optimizing edge inference using TensorRT (FP16/INT8 quantization). Benchmarked state-of-the-art vision-language models for document and chart intelligence."
 		}
 	],
 	skills: [
