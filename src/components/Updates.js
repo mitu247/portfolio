@@ -8,12 +8,14 @@ const Updates = () => {
         <h2 className="section-title">Latest Updates</h2>
         <div className="row">
           <div className="col-lg-8 mx-auto">
-            {updates.map((update) => (
-              <div className="update-item" key={update.id}>
-                <p className="update-date">{update.date}</p>
-                <p className="update-text">{update.text}</p>
-              </div>
-            ))}
+            <div className="timeline-container">
+              {updates.map((update) => (
+                <div className="update-item" key={update.id}>
+                  <p className="update-date">{update.date}</p>
+                  <p className="update-text">{update.text}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

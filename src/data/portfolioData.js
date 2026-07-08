@@ -146,31 +146,31 @@ export const interests = [
 		id: 1,
 		title: "Reliable Computer Vision Systems",
 		description: "Building robust and trustworthy vision systems for real-world applications.",
-		icon: "fas fa-eye"
+		icon: "Eye"
 	},
 	{
 		id: 2,
 		title: "Machine Learning",
 		description: "Deep learning, NLP, and predictive modeling.",
-		icon: "fas fa-brain"
+		icon: "Brain"
 	},
 	{
 		id: 3,
 		title: "Reinforcement Learning",
 		description: "Decision making and control in complex environments.",
-		icon: "fas fa-robot"
+		icon: "Bot"
 	},
 	{
 		id: 4,
 		title: "Computer Graphics",
 		description: "Rendering, simulation, and visual computing.",
-		icon: "fas fa-image"
+		icon: "Image"
 	},
 	{
 		id: 5,
 		title: "Data Science",
 		description: "Extracting insights from data through statistical analysis and visualization.",
-		icon: "fas fa-chart-bar"
+		icon: "BarChart"
 	}
 ];
 
