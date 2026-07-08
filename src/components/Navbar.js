@@ -7,9 +7,8 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 100);
+      setIsScrolled(window.scrollY > 50);
       
-      // Update active section based on scroll position
       const sections = ['bio', 'projects', 'research', 'interests', 'cv', 'updates'];
       for (const section of sections) {
         const element = document.getElementById(section);
@@ -39,18 +38,25 @@ const Navbar = () => {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const offset = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
   };
 
   return (
-    <nav className={`navbar navbar-expand-lg sticky-top ${isScrolled ? 'shadow' : ''}`}>
+    <nav className={`navbar navbar-expand-lg sticky-top ${isScrolled ? 'shadow-sm' : ''}`}>
       <div className="container">
         <a className="navbar-brand" href="#bio" onClick={(e) => { e.preventDefault(); scrollToSection('bio'); }}>
-          {personalInfo.name.split(' ')[0]}
+          {personalInfo.name}
         </a>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler border-0 shadow-none"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
