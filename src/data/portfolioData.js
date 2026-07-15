@@ -41,6 +41,51 @@ export const professionalProjects = [
 		highlights: ["ROUGE-1: 0.607 (SFT) vs 0.301 (RAG)", "Vector Search Pipeline", "Style Alignment Analysis"],
 		link: "https://github.com/mitu247/RAG-vs-FineTuning",
 		demo: null
+	},
+	{
+		id: 4,
+		title: "Containerized Edge AI for Multi-Label Image Classification",
+		description: "High-performance multi-label image classification pipeline deployed on NVIDIA Jetson edge devices. Optimized EfficientNet using TensorRT (FP16) and implemented asynchronous GPU orchestration via PyCUDA within Docker. Handled dynamic shapes and leveraged the native nvidia runtime for minimal container overhead.",
+		technologies: ["Python", "TensorRT", "PyCUDA", "NVIDIA Jetson", "Docker"],
+		highlights: ["FP16 Optimization", "Asynchronous GPU Transfers", "Native NVIDIA Runtime"],
+		link: "#",
+		demo: null
+	},
+	{
+		id: 5,
+		title: "High-Performance Multi-Label Log Classification",
+		description: "Multi-label text classification system for unstructured system logs. Evaluated generative LLMs against a fine-tuned ModernBERT baseline. Deployed a 149M ModernBERT, accelerating inference to 2ms–5ms and reducing parameter footprint by 47x compared to token generation loops.",
+		technologies: ["PyTorch", "ModernBERT", "vLLM", "scikit-learn"],
+		highlights: ["47x Parameter Reduction", "2ms-5ms Latency", "Hardware-Optimized Inference"],
+		link: "#",
+		demo: null
+	},
+	{
+		id: 6,
+		title: "Multimodal Vision Models for Dashboard Analytics",
+		description: "Benchmarked DeepSeek OCR, Gemma 3, and Qwen3-VL on complex UI dashboards for text extraction, multi-chart layout parsing, and visual anomaly detection. Determined that advanced vision models like Qwen3-VL are essential for capturing color-coded alerts and multi-figure contexts.",
+		technologies: ["DeepSeek OCR", "Gemma 3", "Qwen3-VL"],
+		highlights: ["Visual Anomaly Detection", "Multi-Chart Layout Parsing", "Color Sensitivity"],
+		link: "#",
+		demo: null
+	},
+	{
+		id: 7,
+		title: "Automated Generative Evaluation Pipeline for Clinical NLP",
+		description: "Two-phase ML evaluation architecture using vLLM and Vertex AI Gemini for clinical workflows. Built asynchronous generation pipelines and automated LLM-as-a-judge scoring. Enhanced data ingestion robustness through defensive JSON parsing to eliminate hallucinations.",
+		technologies: ["Python", "vLLM", "Vertex AI", "Gemini", "Pandas"],
+		highlights: ["Asynchronous Generation", "LLM-as-a-Judge", "Defensive Parsing"],
+		link: "#",
+		demo: null
+	},
+	{
+		id: 8,
+		title: "MLS Vision Model Benchmarking",
+		description: "Performance evaluation of instance segmentation models for video redaction tasks in the Machine Learning Service (MLS). Benchmarked YOLOv8-Seg and RTMDet-Ins on COCO validation datasets for inference speed and AP/AR metrics across different object scales.",
+		technologies: ["Python", "YOLOv8", "RTMDet-Ins", "FastAPI", "Celery"],
+		highlights: ["AP/AR Metric Benchmarking", "Inference Latency Analysis", "Real-Time Optimization"],
+		link: "#",
+		demo: null
 	}
 ];
 
