@@ -1,20 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { personalInfo } from '../data/portfolioData';
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState('bio');
-  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-      
       const sections = ['bio', 'projects', 'research', 'interests', 'cv', 'updates'];
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
           const rect = element.getBoundingClientRect();
-          if (rect.top <= 150 && rect.bottom >= 150) {
+          if (rect.top <= 120 && rect.bottom >= 120) {
             setActiveSection(section);
             break;
           }
@@ -27,56 +23,49 @@ const Navbar = () => {
   }, []);
 
   const navItems = [
-    { id: 'bio', label: 'Bio' },
+    { id: 'bio', label: 'About' },
     { id: 'projects', label: 'Projects' },
     { id: 'research', label: 'Research' },
     { id: 'interests', label: 'Interests' },
     { id: 'cv', label: 'CV' },
-    { id: 'updates', label: 'Updates' }
+    { id: 'updates', label: 'Updates' },
   ];
 
-  const scrollToSection = (sectionId) => {
+  const scrollToSection = (e, sectionId) => {
+    e.preventDefault();
     const element = document.getElementById(sectionId);
     if (element) {
-      const offset = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
+      const top = element.getBoundingClientRect().top + window.pageYOffset - 24;
+      window.scrollTo({ top, behavior: 'smooth' });
     }
   };
 
   return (
-    <nav className={`navbar navbar-expand-lg sticky-top ${isScrolled ? 'shadow-sm' : ''}`}>
-      <div className="container">
-        <a className="navbar-brand" href="#bio" onClick={(e) => { e.preventDefault(); scrollToSection('bio'); }}>
-          {personalInfo.name}
-        </a>
-        <button
-          className="navbar-toggler border-0 shadow-none"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul className="navbar-nav">
+    <>
+      {/* Fixed left nav — desktop only */}
+      <nav className="left-nav">
+        {navItems.map((item) => (
+          <a
+            key={item.id}
+            href={`#${item.id}`}
+            className={activeSection === item.id ? 'active' : ''}
+            onClick={(e) => scrollToSection(e, item.id)}
+          >
+            {item.label}
+          </a>
+        ))}
+      </nav>
+
+      {/* Horizontal top nav — mobile only */}
+      <nav className="top-nav">
+        <div className="top-nav-inner">
+          <ul className="nav-links">
             {navItems.map((item) => (
-              <li className="nav-item" key={item.id}>
+              <li key={item.id}>
                 <a
-                  className={`nav-link ${activeSection === item.id ? 'active' : ''}`}
                   href={`#${item.id}`}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    scrollToSection(item.id);
-                  }}
+                  className={activeSection === item.id ? 'active' : ''}
+                  onClick={(e) => scrollToSection(e, item.id)}
                 >
                   {item.label}
                 </a>
@@ -84,8 +73,8 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </>
   );
 };
 

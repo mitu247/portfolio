@@ -4,20 +4,14 @@ import { updates } from '../data/portfolioData';
 const Updates = () => {
   return (
     <section id="updates" className="section">
-      <div className="container">
-        <h2 className="section-title">Latest Updates</h2>
-        <div className="row">
-          <div className="col-lg-8 mx-auto">
-            <div className="timeline-container">
-              {updates.map((update) => (
-                <div className="update-item" key={update.id}>
-                  <p className="update-date">{update.date}</p>
-                  <p className="update-text">{update.text}</p>
-                </div>
-              ))}
-            </div>
+      <h2 className="section-heading">Updates</h2>
+      <div className="timeline">
+        {updates.map((update) => (
+          <div key={update.id} className="timeline-item">
+            <div className="timeline-date">{update.date}</div>
+            <div className="timeline-text">{update.text}</div>
           </div>
-        </div>
+        ))}
       </div>
     </section>
   );
