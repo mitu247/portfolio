@@ -5,6 +5,7 @@ const Research = () => {
   return (
     <section id="research" className="section">
       <h2 className="section-heading">Research</h2>
+      <p className="section-intro">Current and completed work on reliable reasoning and computer vision.</p>
       <div className="research-list">
         {research.map((pub) => (
           <div key={pub.id} className="research-item">

@@ -32,13 +32,13 @@ const Projects = () => {
   return (
     <section id="projects" className="section">
       <h2 className="section-heading">Projects</h2>
-      <div className="category-label">Personal ML Explorations</div>
+      <p className="section-intro">Selected work in language models, evaluation, and applied machine learning.</p>
       <div className="project-list">
         {professionalProjects.map((project) => (
           <ProjectItem key={project.id} project={project} />
         ))}
       </div>
-      <div className="category-label">Academic & Course Projects</div>
+      <div className="category-label">Academic project</div>
       <div className="project-list">
         {projects.map((project) => (
           <ProjectItem key={project.id} project={project} />

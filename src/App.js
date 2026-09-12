@@ -17,11 +17,11 @@ function App() {
         <Sidebar />
         <main className="main-content">
           <Bio />
-          <Projects />
           <Research />
+          <Projects />
           <Interests />
-          <CV />
           <Updates />
+          <CV />
         </main>
       </div>
       <Footer />

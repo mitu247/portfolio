@@ -2,7 +2,7 @@
 
 export const personalInfo = {
 	name: "Sushmita Paul",
-	tagline: "Machine Learning Engineer | Therap BD LTD",
+	tagline: "Machine Learning Engineer and Researcher",
 	email: "sushmitap247@gmail.com",
 	location: "Dhaka, Bangladesh",
 	linkedin: "https://www.linkedin.com/in/sushmita-paul-3b19741a4/",
@@ -11,7 +11,9 @@ export const personalInfo = {
 };
 
 export const bio = {
-	content: `I am a Machine Learning Engineer at Therap BD LTD with a strong academic background in Computer Science and Engineering. I completed my Bachelors from Bangladesh University of Engineering and Technology with a CGPA of 3.80. Prior to that, I achieved a perfect GPA of 5.00 out of 5.00 in both my Secondary School Certificate (SSC) and Higher Secondary Certificate (HSC) examinations, ranking at the top among the girls of Chittagong Board in HSC. I am passionate about machine learning and its applications, constantly working to expand my knowledge and skills in this exciting field.`
+	content: `I am a Machine Learning Engineer at Therap BD Ltd and a Computer Science and Engineering graduate from Bangladesh University of Engineering and Technology. My work spans natural language processing, computer vision, and efficient machine learning systems. I am currently studying how external state support and history management affect the reliability of small language models during long-horizon graph reasoning.
+
+I try to be honest in how I learn and in how I evaluate my own work. That means being clear about what I understand, recognizing what I still need to learn, and letting evidence guide my conclusions. I am interested in research that is careful, reproducible, and useful beyond a benchmark.`
 };
 
 export const professionalProjects = [
@@ -52,62 +54,6 @@ export const projects = [
 		technologies: ["TypeScript", "JavaScript", "CSS", "HTML"],
 		link: "https://github.com/EduByte-BUET/EduByte-CSE-408-Software-Engineering-Sessional",
 		demo: null
-	},
-	{
-		id: 2,
-		title: "Football Player Database Management System",
-		description: "Java-based system to manage football player records with multi-attribute search and data persistence.",
-		technologies: ["Java", "CSS"],
-		link: "https://github.com/mitu247/Java-Term-Project-108",
-		demo: null
-	},
-	{
-		id: 3,
-		title: "Computer Security",
-		description: "A comprehensive study and documentation of cryptographic protocols and network security vulnerabilities. Analyzed various attack vectors and proposed mitigation strategies using standard security models.",
-		technologies: ["TeX", "Python", "JavaScript"],
-		link: "https://github.com/mitu247/Computer-Security-406",
-		demo: null
-	},
-	{
-		id: 4,
-		title: "Operating Systems",
-		description: "Implemented core operating system components including process scheduling algorithms and memory management units. Simulating concurrency control mechanisms and inter-process communication using C++.",
-		technologies: ["C++", "Shell"],
-		link: "https://github.com/mitu247/Operating-Systems-314",
-		demo: null
-	},
-	{
-		id: 5,
-		title: "Computer Networks",
-		description: "Developed valid network protocols and simulation environments to analyze data packet transmission. Implemented socket programming interfaces to demonstrate TCP/UDP communication models.",
-		technologies: ["C++", "Java", "Shell"],
-		link: "https://github.com/mitu247/Computer-Network-322",
-		demo: null
-	},
-	{
-		id: 6,
-		title: "Computer Graphics",
-		description: "Built 2D/3D rendering engines demonstrating geometric transformations, shading, and lighting effects. Implemented algorithms for ray tracing and rasterization to visualize complex scenes.",
-		technologies: ["C++"],
-		link: "https://github.com/mitu247/Computer-Graphics-410",
-		demo: null
-	},
-	{
-		id: 7,
-		title: "Compiler Design",
-		description: "Designed a lexical analyzer and parser for a custom programming language subset using Yacc and Lex. Implemented symbol table management and intermediate code generation phases.",
-		technologies: ["Yacc", "C++", "Assembly", "Lex", "C"],
-		link: "https://github.com/mitu247/Compiler-310",
-		demo: null
-	},
-	{
-		id: 8,
-		title: "Artificial Intelligence",
-		description: "Implemented classic AI search algorithms including A* and minimax for game-playing agents. Developed constraint satisfaction problem solvers and heuristic-based optimization logic.",
-		technologies: ["Java", "C++"],
-		link: "https://github.com/mitu247/Artificial-Intelligence-318",
-		demo: null
 	}
 ];
 
@@ -119,7 +65,7 @@ export const research = [
 		venue: "Bangladesh University of Engineering and Technology",
 		abstract: "Developed automated computer vision system for identifying dengue breeding sites from UAV-captured aerial orthophotos. Evaluated state-of-the-art detection and segmentation models (YOLOv8, YOLOv11, SAM, SegGPT) on custom-annotated dataset. Designed geospatial data analysis pipeline for precise breeding site localization using GPS coordinates, achieving 83.6% balanced accuracy.",
 		link: "https://github.com/excellencior/Dengue-Breeding-Site-Identification",
-		thumbnail: "https://raw.githubusercontent.com/excellencior/Dengue-Breeding-Site-Identification/main/images/ortho_full_new.png",
+		thumbnail: "/orthophoto_r83.png",
 		year: "2023 – 2025"
 	},
 	{
@@ -129,15 +75,15 @@ export const research = [
 		venue: "Machine Learning Course, BUET",
 		abstract: "Fine-tuned SAM2 and SwinUNETR for lung nodule segmentation and a pre-trained Faster R-CNN for nodule detection on the LIDC-IDRI dataset. Utilized point-prompt and sliding-window pipelines with hybrid loss functions. Achieved Dice score of 0.93, Precision of 0.96, and Recall of 0.89.",
 		link: "https://github.com/mitu247/ML-Project-472",
-		thumbnail: "https://raw.githubusercontent.com/mitu247/ML-Project-472/main/images/architecture.png",
+		thumbnail: "/LungNoduleSegmentation.png",
 		year: "2025"
 	},
 	{
 		id: 3,
-		title: "Streaming Machine Learning for Real-time Applications",
+		title: "External State Support and History Management in Small Language Models for Long-Horizon Graph Traversal",
 		authors: "Ongoing Research Project",
-		venue: "Collaboration with Professor, BUET",
-		abstract: "Investigating streaming machine learning techniques for real-time model training and inference on continuously flowing data streams. Exploring trade-offs between model performance, latency, and computational efficiency in stream processing environments.",
+		venue: "Research Collaboration, BUET",
+		abstract: "Investigating state tracking and reasoning reliability in small language models through multi-turn breadth-first and depth-first graph traversal. The study compares external state-support strategies and conversation-history policies across Qwen and Gemma models. Built a reproducible vLLM and Slurm evaluation pipeline with fixed data splits, resumable runs, trajectory logging, and measures of task completion, traversal correctness, invalid actions, and recovery after errors.",
 		link: "#",
 		year: "2025 – Present"
 	}
@@ -146,33 +92,19 @@ export const research = [
 export const interests = [
 	{
 		id: 1,
-		title: "Reliable Computer Vision Systems",
-		description: "Building robust and trustworthy vision systems for real-world applications.",
-		icon: "Eye"
+		title: "SLM Reasoning and Evaluation"
 	},
 	{
 		id: 2,
-		title: "Machine Learning",
-		description: "Deep learning, NLP, and predictive modeling.",
-		icon: "Brain"
+		title: "Reliable AI"
 	},
 	{
 		id: 3,
-		title: "Reinforcement Learning",
-		description: "Decision making and control in complex environments.",
-		icon: "Bot"
+		title: "Efficient ML Systems"
 	},
 	{
 		id: 4,
-		title: "Computer Graphics",
-		description: "Rendering, simulation, and visual computing.",
-		icon: "Image"
-	},
-	{
-		id: 5,
-		title: "Data Science",
-		description: "Extracting insights from data through statistical analysis and visualization.",
-		icon: "BarChart"
+		title: "Computer Vision"
 	}
 ];
 
@@ -196,71 +128,9 @@ export const updates = [
 		id: 4,
 		date: "March 18, 2025",
 		text: "Thesis defended"
-	},
-	{
-		id: 5,
-		date: "October 2020",
-		text: "Back to BUET campus (followed by another lockdown till February 2021)"
-	},
-	{
-		id: 6,
-		date: "March 2020",
-		text: "Corona started"
-	},
-	{
-		id: 7,
-		date: "February 2020",
-		text: "Got Admitted into BUET"
-	},
-	{
-		id: 8,
-		date: "April 2019",
-		text: "Higher Secondary Certificate"
-	},
-	{
-		id: 9,
-		date: "June 2017",
-		text: "Secondary School Certificate"
-	},
-	{
-		id: 10,
-		date: "December 2011",
-		text: "Primary School Certificate"
 	}
 ];
 
 export const cv = {
-	education: [
-		{
-			degree: "B.Sc. in Computer Science and Engineering",
-			institution: "Bangladesh University of Engineering and Technology",
-			year: "2020 - 2025",
-			description: "Graduated in March, 2025 with CGPA 3.80"
-		},
-		{
-			degree: "Higher Secondary Certificate (HSC)",
-			institution: "Chittagong College",
-			year: "2017 - 2019",
-			description: "GPA 5.00 out of 5.00 - Ranked top among the girls of Chittagong Board"
-		},
-		{
-			degree: "Secondary School Certificate (SSC)",
-			institution: "Cox's Bazar Govt. Girls High School",
-			year: "2012 - 2017",
-			description: "GPA 5.00 out of 5.00"
-		}
-	],
-	experience: [
-		{
-			title: "Machine Learning Engineer",
-			company: "Therap BD LTD",
-			year: "Apr 2025 - Present",
-			description: "Engineered a decoupled LLM evaluation and DSPy-style prompt-optimization pipeline using Gemma and Gemini for clinical data. Deployed containerized multi-label image classification on NVIDIA Jetson using TensorRT V3. Productionized a high-performance ModernBERT encoder for system log classification, reducing latency to 2-5ms. Evaluated VLM architectures (Qwen3-VL) for dashboard analytics and integrated YOLOv8-Seg into a scalable Celery/RabbitMQ microservice for real-time video redaction."
-		}
-	],
-	skills: [
-		"Python", "PyTorch", "Transformers", "vLLM", "QLoRA", "FAISS", "TensorFlow", "NVIDIA Jetson", "Weights & Biases", "Git", "Docker"
-	],
-	downloadLink: "/CV.pdf",
-	about: "I am currently working as a machine learning engineer and open to collaborations on interesting topics that include machine learning / applications or systems in general."
+	downloadLink: "/CV.pdf"
 };

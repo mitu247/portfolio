@@ -30,7 +30,7 @@ const Sidebar = () => {
         {personalInfo.location}
       </p>
       <p className="sidebar-role">Machine Learning Engineer</p>
-      <p className="sidebar-org">Therap BD LTD</p>
+      <p className="sidebar-org">SLM reasoning · Computer vision</p>
       <p className="sidebar-edu">B.Sc. in CSE, BUET</p>
       <div className="social-links">
         <a
