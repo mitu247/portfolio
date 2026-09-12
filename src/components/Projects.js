@@ -38,7 +38,7 @@ const Projects = () => {
           <ProjectItem key={project.id} project={project} />
         ))}
       </div>
-      <div className="category-label">Academic project</div>
+      <div className="category-label">Academic & Course Projects</div>
       <div className="project-list">
         {projects.map((project) => (
           <ProjectItem key={project.id} project={project} />

@@ -54,6 +54,62 @@ export const projects = [
 		technologies: ["TypeScript", "JavaScript", "CSS", "HTML"],
 		link: "https://github.com/EduByte-BUET/EduByte-CSE-408-Software-Engineering-Sessional",
 		demo: null
+	},
+	{
+		id: 2,
+		title: "Football Player Database Management System",
+		description: "Java-based system for managing football player records with multi-attribute search and persistent storage.",
+		technologies: ["Java", "CSS"],
+		link: "https://github.com/mitu247/Java-Term-Project-108",
+		demo: null
+	},
+	{
+		id: 3,
+		title: "Computer Security",
+		description: "Studied cryptographic protocols and network vulnerabilities, implemented security-related exercises, and documented attack vectors and mitigations.",
+		technologies: ["Python", "JavaScript", "TeX"],
+		link: "https://github.com/mitu247/Computer-Security-406",
+		demo: null
+	},
+	{
+		id: 4,
+		title: "Operating Systems",
+		description: "Implemented operating-system components covering process scheduling, memory management, synchronization, and inter-process communication.",
+		technologies: ["C++", "Shell"],
+		link: "https://github.com/mitu247/Operating-Systems-314",
+		demo: null
+	},
+	{
+		id: 5,
+		title: "Computer Networks",
+		description: "Implemented networking protocols and socket-based applications to study TCP/UDP communication and packet transmission.",
+		technologies: ["C++", "Java", "Shell"],
+		link: "https://github.com/mitu247/Computer-Network-322",
+		demo: null
+	},
+	{
+		id: 6,
+		title: "Computer Graphics",
+		description: "Built graphics assignments covering geometric transformations, rasterization, lighting, shading, and ray tracing.",
+		technologies: ["C++"],
+		link: "https://github.com/mitu247/Computer-Graphics-410",
+		demo: null
+	},
+	{
+		id: 7,
+		title: "Compiler Design",
+		description: "Designed a lexer and parser with symbol-table management and intermediate code generation for a programming-language subset.",
+		technologies: ["C++", "C", "Yacc", "Lex", "Assembly"],
+		link: "https://github.com/mitu247/Compiler-310",
+		demo: null
+	},
+	{
+		id: 8,
+		title: "Artificial Intelligence",
+		description: "Implemented heuristic search, constraint-satisfaction, and game-playing algorithms including A* and minimax.",
+		technologies: ["Java", "C++"],
+		link: "https://github.com/mitu247/Artificial-Intelligence-318",
+		demo: null
 	}
 ];
 
