@@ -11,9 +11,9 @@ export const personalInfo = {
 };
 
 export const bio = {
-	content: `I am a Machine Learning Engineer at Therap BD Ltd and a Computer Science and Engineering graduate from Bangladesh University of Engineering and Technology. My work spans natural language processing, computer vision, and efficient machine learning systems. I am currently studying how external state support and history management affect the reliability of small language models during long-horizon graph reasoning.
+	content: `I am a Machine Learning Engineer at Therap BD Ltd and a Computer Science and Engineering graduate from BUET. I work on natural language processing, computer vision, and efficient machine learning systems. Currently, I am researching how small language models handle long graph reasoning tasks with external state support and different conversation-history settings.
 
-I try to be honest in how I learn and in how I evaluate my own work. That means being clear about what I understand, recognizing what I still need to learn, and letting evidence guide my conclusions. I am interested in research that is careful, reproducible, and useful beyond a benchmark.`
+I try to be honest with myself about what I understand, what I do not know yet, and where I need to improve. I enjoy learning, asking questions, and working on research that is careful and useful.`
 };
 
 export const professionalProjects = [
