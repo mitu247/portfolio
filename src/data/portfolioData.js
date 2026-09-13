@@ -50,6 +50,7 @@ export const projects = [
 	{
 		id: 1,
 		title: "EduByte: AI-Enhanced E-Learning Platform",
+		category: "ai",
 		description: "Built a full-stack e-learning platform that helps students discover relevant courses, ask questions through a GPT-based assistant, and complete AI-supported examinations. The project demonstrates product-oriented software design, recommendation workflows, and the integration of language-model features into a usable web application.",
 		technologies: ["TypeScript", "JavaScript", "CSS", "HTML"],
 		highlights: ["Full-Stack Development", "Recommendation System", "LLM Integration"],
@@ -59,6 +60,7 @@ export const projects = [
 	{
 		id: 2,
 		title: "Football Player Database Management System",
+		category: "systems",
 		description: "Created a Java application for maintaining football-player records, querying them by multiple attributes, and preserving data between sessions. The work applies object-oriented design, structured data modeling, search logic, and file-based persistence.",
 		technologies: ["Java", "CSS"],
 		highlights: ["Object-Oriented Design", "Multi-Attribute Search", "Data Persistence"],
@@ -68,6 +70,7 @@ export const projects = [
 	{
 		id: 3,
 		title: "Computer Security",
+		category: "systems",
 		description: "Implemented practical exercises around cryptographic protocols, authentication, and network vulnerabilities. I analyzed how attacks work, reproduced security scenarios in controlled environments, and documented concrete mitigations—building skills in threat modeling and secure-system reasoning.",
 		technologies: ["Python", "JavaScript", "TeX"],
 		highlights: ["Threat Analysis", "Cryptographic Protocols", "Security Documentation"],
@@ -77,6 +80,7 @@ export const projects = [
 	{
 		id: 4,
 		title: "Operating Systems",
+		category: "systems",
 		description: "Implemented core operating-system mechanisms for process scheduling, virtual memory, synchronization, and inter-process communication. The assignments required low-level debugging and careful reasoning about concurrency, resource ownership, and system behavior.",
 		technologies: ["C++", "Shell"],
 		highlights: ["Concurrency", "Memory Management", "Systems Debugging"],
@@ -86,6 +90,7 @@ export const projects = [
 	{
 		id: 5,
 		title: "Computer Networks",
+		category: "systems",
 		description: "Developed socket-based client–server applications and protocol exercises to study reliable TCP communication, UDP messaging, and packet transmission. The project strengthened my understanding of network layers, protocol behavior, and distributed application debugging.",
 		technologies: ["C++", "Java", "Shell"],
 		highlights: ["Socket Programming", "Protocol Design", "Network Debugging"],
@@ -95,6 +100,7 @@ export const projects = [
 	{
 		id: 6,
 		title: "Computer Graphics",
+		category: "ai",
 		description: "Built a series of rendering programs covering geometric transformations, rasterization, lighting, shading, and ray tracing. The work translates mathematical models into visual results and demonstrates proficiency with graphics algorithms and performance-conscious C++.",
 		technologies: ["C++"],
 		highlights: ["Ray Tracing", "Rendering Pipeline", "Computational Geometry"],
@@ -104,6 +110,7 @@ export const projects = [
 	{
 		id: 7,
 		title: "Compiler Design",
+		category: "systems",
 		description: "Designed the front and middle stages of a compiler for a programming-language subset, including lexical analysis, parsing, semantic checks, symbol-table management, and intermediate code generation. The project connects formal language theory with a working translation pipeline.",
 		technologies: ["C++", "C", "Yacc", "Lex", "Assembly"],
 		highlights: ["Lexical & Syntax Analysis", "Symbol Tables", "Code Generation"],
@@ -113,6 +120,7 @@ export const projects = [
 	{
 		id: 8,
 		title: "Artificial Intelligence",
+		category: "ai",
 		description: "Implemented classical AI methods for heuristic search, constraint-satisfaction problems, and adversarial game playing. Solutions included A* and minimax-based agents, with attention to state representation, heuristic design, pruning, and empirical performance.",
 		technologies: ["Java", "C++"],
 		highlights: ["A* Search", "Constraint Solving", "Minimax & Pruning"],
@@ -124,9 +132,9 @@ export const projects = [
 export const research = [
 	{
 		id: 1,
-		title: "Automatic Dengue Breeding Site Identification Using Drone Imagery",
-		authors: "Undergraduate Thesis Research",
-		venue: "Bangladesh University of Engineering and Technology",
+		title: "Detection of Dengue Breeding Sites in Unplanned Urban Landscapes with Deep Learning from Remote Sensing",
+		authors: "Sushmita Paul · Collaborator: Apurbo Banik Turjo",
+		venue: "Thesis supervised by Prof. Anindya Iqbal, BUET",
 		abstract: "Developed a computer-vision system that detects potential dengue mosquito breeding sites in UAV orthophotos and converts model detections into GPS locations for field use. I created and annotated the dataset, compared YOLOv8, YOLOv11, SAM, and SegGPT detection and segmentation approaches, and built the geospatial analysis pipeline. The final system achieved 83.6% balanced accuracy.",
 		link: "https://github.com/excellencior/Dengue-Breeding-Site-Identification",
 		thumbnail: "/orthophoto_r83.png",
@@ -144,8 +152,8 @@ export const research = [
 	},
 	{
 		id: 3,
-		title: "External State Support and History Management in Small Language Models for Long-Horizon Graph Traversal",
-		authors: "Ongoing Research Project",
+		title: "Diagnosing Small Language Models under Incremental Observations",
+		authors: "Ongoing Research Project · Collaborators: Apurbo Banik Turjo, Dr. Ch. Md. Rakin Haider",
 		venue: "Research Collaboration, BUET",
 		abstract: "Investigating why small language models lose track of multi-step tasks and whether verified external memory can make their reasoning more reliable. Using interactive breadth-first and depth-first graph traversal as controlled test cases, I compare raw prompting, prose and structured state reminders, explicit state verification, and retained versus cleared history across Qwen and Gemma models. I built the reproducible vLLM and Slurm experiment pipeline, including fixed splits, resumable runs, trajectory logging, and metrics for completion, correctness, invalid actions, and recovery after errors.",
 		link: "https://github.com/mitu247/Task-Tracker",
@@ -176,21 +184,31 @@ export const interests = [
 export const updates = [
 	{
 		id: 1,
+		date: "March 2026",
+		text: "Submitted the final revision of “Detection of Dengue Breeding Sites in Unplanned Urban Landscapes with Deep Learning from Remote Sensing” to BMC Public Health (Springer Nature)"
+	},
+	{
+		id: 2,
+		date: "August 2025",
+		text: "Submitted the initial manuscript, “Detection of Dengue Breeding Sites in Unplanned Urban Landscapes with Deep Learning from Remote Sensing,” to BMC Public Health (Springer Nature)"
+	},
+	{
+		id: 3,
 		date: "July 16, 2025",
 		text: "Paper on dengue breeding site identification selected for digital poster presentation at BEAR Summit, BD (2025)"
 	},
 	{
-		id: 2,
+		id: 4,
 		date: "April 6, 2025 - Present",
 		text: "Joined Therap BD LTD as a Machine Learning Engineer"
 	},
 	{
-		id: 3,
+		id: 5,
 		date: "March 25, 2025",
 		text: "Graduated from BUET (CSE)"
 	},
 	{
-		id: 4,
+		id: 6,
 		date: "March 18, 2025",
 		text: "Thesis defended"
 	}

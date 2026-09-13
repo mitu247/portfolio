@@ -15,6 +15,7 @@
 }
 
 html {
+  font-size: 18px;
   scroll-behavior: smooth;
   scroll-padding-top: 72px;
 }
@@ -23,7 +24,7 @@ body {
   background: var(--paper);
   color: var(--ink);
   font-family: 'Source Sans 3', system-ui, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
 }
@@ -137,16 +138,20 @@ h3 {
   font-weight: 600;
 }
 
-.sidebar-org,
-.sidebar-edu {
+.sidebar-org {
   color: var(--muted);
   font-size: 0.83rem;
   line-height: 1.45;
 }
 
-.sidebar-edu {
-  margin-top: 8px;
-  margin-bottom: 20px;
+.sidebar-education {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 9px 0 20px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.4;
 }
 
 .social-links {
@@ -243,6 +248,38 @@ h3 {
 .project-item:first-child {
   padding-top: 0;
   border-top: 0;
+}
+
+.academic-groups {
+  display: grid;
+  gap: 28px;
+}
+
+.academic-group-heading {
+  margin-bottom: 12px;
+  color: var(--navy);
+  font-size: 0.98rem;
+}
+
+.academic-project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.academic-project-grid .project-card {
+  display: flex;
+  flex-direction: column;
+  padding: 17px;
+  background: #fbfcfd;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  box-shadow: 0 3px 12px rgba(24, 59, 91, 0.05);
+}
+
+.project-card .tech-tags {
+  margin-top: auto;
+  padding-top: 11px;
 }
 
 .project-title,
@@ -459,7 +496,7 @@ h3 {
     margin-bottom: 8px;
   }
 
-  .sidebar-edu {
+  .sidebar-education {
     margin: 5px 0 10px;
   }
 
@@ -489,6 +526,10 @@ h3 {
 
   .section {
     margin-bottom: 44px;
+  }
+
+  .academic-project-grid {
+    grid-template-columns: 1fr;
   }
 
   .research-item {

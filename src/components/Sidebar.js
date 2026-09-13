@@ -1,6 +1,6 @@
 import React from 'react';
 import { personalInfo } from '../data/portfolioData';
-import { Mail, MapPin } from 'lucide-react';
+import { GraduationCap, Mail, MapPin } from 'lucide-react';
 
 const GitHubIcon = ({ size = 16 }) => (
   <svg viewBox="0 0 24 24" width={size} height={size} stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -30,8 +30,11 @@ const Sidebar = () => {
         {personalInfo.location}
       </p>
       <p className="sidebar-role">Machine Learning Engineer</p>
-      <p className="sidebar-org">SLM reasoning · Computer vision</p>
-      <p className="sidebar-edu">B.Sc. in CSE, BUET</p>
+      <p className="sidebar-org">Therap BD Ltd · Dhaka, Bangladesh</p>
+      <p className="sidebar-education">
+        <GraduationCap size={15} />
+        CSE Graduate · BUET
+      </p>
       <div className="social-links">
         <a
           href={personalInfo.github}
