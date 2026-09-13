@@ -20,7 +20,7 @@ export const professionalProjects = [
 	{
 		id: 1,
 		title: "Graph Reasoning on NLGraph",
-		description: "Evaluated LLM reasoning capabilities on graph-theory problems from the NLGraph benchmark. Built a multi-round code-verification harness with sandboxed Python execution and hallucination guards using DeepSeek and Qwen models.",
+		description: "Built an evaluation system for testing how reliably language models solve graph-theory problems from the NLGraph benchmark. The pipeline lets DeepSeek and Qwen models generate and revise solutions across multiple rounds, executes their Python code in a sandbox, and checks outputs to expose reasoning errors and hallucinations.",
 		technologies: ["Python", "vLLM", "DeepSeek-R1", "Qwen3.5", "NetworkX"],
 		highlights: ["Chain-of-Thought Prompting", "Code-Augmented Verification", "Sandboxed Execution"],
 		link: "https://github.com/mitu247/Graph_Reasoning_NLGraph",
@@ -29,7 +29,7 @@ export const professionalProjects = [
 	{
 		id: 2,
 		title: "Multi-Label Academic Paper Classification",
-		description: "End-to-end ML pipeline for classifying paper abstracts into 6 scientific categories. Includes QLoRA fine-tuning of Llama & Mistral, ModernBERT with W&B Bayesian sweeps, and synthetic data augmentation using Gemma.",
+		description: "Developed an end-to-end NLP pipeline that assigns paper abstracts to six scientific categories, including overlapping labels. I fine-tuned Llama and Mistral with QLoRA, optimized ModernBERT through W&B Bayesian sweeps, and used Gemma-generated synthetic examples to study how data augmentation affects classification quality.",
 		technologies: ["PyTorch", "Transformers", "QLoRA", "W&B", "ModernBERT", "Gemma"],
 		highlights: ["Hyperparameter Sweeping", "Synthetic Data Generation", "Custom StoppingCriteria"],
 		link: "https://github.com/mitu247/MultiLabel-Paper-Classification",
@@ -38,7 +38,7 @@ export const professionalProjects = [
 	{
 		id: 3,
 		title: "RAG vs Fine-Tuning",
-		description: "Comparative analysis of Retrieval-Augmented Generation vs Supervised Fine-Tuning for succinct Q&A using Gemma-3-27b-it. Fine-tuned model achieved 2x improvement over RAG on all ROUGE metrics.",
+		description: "Designed a controlled comparison of retrieval-augmented generation and supervised fine-tuning for concise question answering with Gemma-3-27B-IT. I built the FAISS retrieval and QLoRA training pipelines, evaluated answer quality with ROUGE and DeepEval, and found that fine-tuning more than doubled every measured ROUGE score in this setting.",
 		technologies: ["Gemma-3", "FAISS", "QLoRA", "SFTTrainer", "DeepEval"],
 		highlights: ["ROUGE-1: 0.607 (SFT) vs 0.301 (RAG)", "Vector Search Pipeline", "Style Alignment Analysis"],
 		link: "https://github.com/mitu247/RAG-vs-FineTuning",
@@ -50,64 +50,72 @@ export const projects = [
 	{
 		id: 1,
 		title: "EduByte: AI-Enhanced E-Learning Platform",
-		description: "Full-stack e-learning platform with personalized course recommendations, GPT-based chatbot, and AI-powered examination system.",
+		description: "Built a full-stack e-learning platform that helps students discover relevant courses, ask questions through a GPT-based assistant, and complete AI-supported examinations. The project demonstrates product-oriented software design, recommendation workflows, and the integration of language-model features into a usable web application.",
 		technologies: ["TypeScript", "JavaScript", "CSS", "HTML"],
+		highlights: ["Full-Stack Development", "Recommendation System", "LLM Integration"],
 		link: "https://github.com/EduByte-BUET/EduByte-CSE-408-Software-Engineering-Sessional",
 		demo: null
 	},
 	{
 		id: 2,
 		title: "Football Player Database Management System",
-		description: "Java-based system for managing football player records with multi-attribute search and persistent storage.",
+		description: "Created a Java application for maintaining football-player records, querying them by multiple attributes, and preserving data between sessions. The work applies object-oriented design, structured data modeling, search logic, and file-based persistence.",
 		technologies: ["Java", "CSS"],
+		highlights: ["Object-Oriented Design", "Multi-Attribute Search", "Data Persistence"],
 		link: "https://github.com/mitu247/Java-Term-Project-108",
 		demo: null
 	},
 	{
 		id: 3,
 		title: "Computer Security",
-		description: "Studied cryptographic protocols and network vulnerabilities, implemented security-related exercises, and documented attack vectors and mitigations.",
+		description: "Implemented practical exercises around cryptographic protocols, authentication, and network vulnerabilities. I analyzed how attacks work, reproduced security scenarios in controlled environments, and documented concrete mitigations—building skills in threat modeling and secure-system reasoning.",
 		technologies: ["Python", "JavaScript", "TeX"],
+		highlights: ["Threat Analysis", "Cryptographic Protocols", "Security Documentation"],
 		link: "https://github.com/mitu247/Computer-Security-406",
 		demo: null
 	},
 	{
 		id: 4,
 		title: "Operating Systems",
-		description: "Implemented operating-system components covering process scheduling, memory management, synchronization, and inter-process communication.",
+		description: "Implemented core operating-system mechanisms for process scheduling, virtual memory, synchronization, and inter-process communication. The assignments required low-level debugging and careful reasoning about concurrency, resource ownership, and system behavior.",
 		technologies: ["C++", "Shell"],
+		highlights: ["Concurrency", "Memory Management", "Systems Debugging"],
 		link: "https://github.com/mitu247/Operating-Systems-314",
 		demo: null
 	},
 	{
 		id: 5,
 		title: "Computer Networks",
-		description: "Implemented networking protocols and socket-based applications to study TCP/UDP communication and packet transmission.",
+		description: "Developed socket-based client–server applications and protocol exercises to study reliable TCP communication, UDP messaging, and packet transmission. The project strengthened my understanding of network layers, protocol behavior, and distributed application debugging.",
 		technologies: ["C++", "Java", "Shell"],
+		highlights: ["Socket Programming", "Protocol Design", "Network Debugging"],
 		link: "https://github.com/mitu247/Computer-Network-322",
 		demo: null
 	},
 	{
 		id: 6,
 		title: "Computer Graphics",
-		description: "Built graphics assignments covering geometric transformations, rasterization, lighting, shading, and ray tracing.",
+		description: "Built a series of rendering programs covering geometric transformations, rasterization, lighting, shading, and ray tracing. The work translates mathematical models into visual results and demonstrates proficiency with graphics algorithms and performance-conscious C++.",
 		technologies: ["C++"],
+		highlights: ["Ray Tracing", "Rendering Pipeline", "Computational Geometry"],
 		link: "https://github.com/mitu247/Computer-Graphics-410",
 		demo: null
 	},
 	{
 		id: 7,
 		title: "Compiler Design",
-		description: "Designed a lexer and parser with symbol-table management and intermediate code generation for a programming-language subset.",
+		description: "Designed the front and middle stages of a compiler for a programming-language subset, including lexical analysis, parsing, semantic checks, symbol-table management, and intermediate code generation. The project connects formal language theory with a working translation pipeline.",
 		technologies: ["C++", "C", "Yacc", "Lex", "Assembly"],
+		highlights: ["Lexical & Syntax Analysis", "Symbol Tables", "Code Generation"],
 		link: "https://github.com/mitu247/Compiler-310",
 		demo: null
 	},
 	{
 		id: 8,
 		title: "Artificial Intelligence",
-		description: "Implemented heuristic search, constraint-satisfaction, and game-playing algorithms including A* and minimax.",
+		description: "Implemented classical AI methods for heuristic search, constraint-satisfaction problems, and adversarial game playing. Solutions included A* and minimax-based agents, with attention to state representation, heuristic design, pruning, and empirical performance.",
 		technologies: ["Java", "C++"],
+		highlights: ["A* Search", "Constraint Solving", "Minimax & Pruning"],
 		link: "https://github.com/mitu247/Artificial-Intelligence-318",
 		demo: null
 	}
@@ -119,7 +127,7 @@ export const research = [
 		title: "Automatic Dengue Breeding Site Identification Using Drone Imagery",
 		authors: "Undergraduate Thesis Research",
 		venue: "Bangladesh University of Engineering and Technology",
-		abstract: "Developed automated computer vision system for identifying dengue breeding sites from UAV-captured aerial orthophotos. Evaluated state-of-the-art detection and segmentation models (YOLOv8, YOLOv11, SAM, SegGPT) on custom-annotated dataset. Designed geospatial data analysis pipeline for precise breeding site localization using GPS coordinates, achieving 83.6% balanced accuracy.",
+		abstract: "Developed a computer-vision system that detects potential dengue mosquito breeding sites in UAV orthophotos and converts model detections into GPS locations for field use. I created and annotated the dataset, compared YOLOv8, YOLOv11, SAM, and SegGPT detection and segmentation approaches, and built the geospatial analysis pipeline. The final system achieved 83.6% balanced accuracy.",
 		link: "https://github.com/excellencior/Dengue-Breeding-Site-Identification",
 		thumbnail: "/orthophoto_r83.png",
 		year: "2023 – 2025"
@@ -129,7 +137,7 @@ export const research = [
 		title: "Lung Nodule Segmentation for Cancer Detection",
 		authors: "Course Project",
 		venue: "Machine Learning Course, BUET",
-		abstract: "Fine-tuned SAM2 and SwinUNETR for lung nodule segmentation and a pre-trained Faster R-CNN for nodule detection on the LIDC-IDRI dataset. Utilized point-prompt and sliding-window pipelines with hybrid loss functions. Achieved Dice score of 0.93, Precision of 0.96, and Recall of 0.89.",
+		abstract: "Built a medical-imaging pipeline that first detects lung nodules in CT scans and then segments their boundaries to support downstream cancer analysis. I fine-tuned Faster R-CNN, SAM2, and SwinUNETR on LIDC-IDRI, implementing point-prompt, sliding-window, and hybrid-loss training workflows. The segmentation system achieved a 0.93 Dice score, 0.96 precision, and 0.89 recall.",
 		link: "https://github.com/mitu247/ML-Project-472",
 		thumbnail: "/LungNoduleSegmentation.png",
 		year: "2025"
@@ -139,8 +147,9 @@ export const research = [
 		title: "External State Support and History Management in Small Language Models for Long-Horizon Graph Traversal",
 		authors: "Ongoing Research Project",
 		venue: "Research Collaboration, BUET",
-		abstract: "Investigating state tracking and reasoning reliability in small language models through multi-turn breadth-first and depth-first graph traversal. The study compares external state-support strategies and conversation-history policies across Qwen and Gemma models. Built a reproducible vLLM and Slurm evaluation pipeline with fixed data splits, resumable runs, trajectory logging, and measures of task completion, traversal correctness, invalid actions, and recovery after errors.",
-		link: "#",
+		abstract: "Investigating why small language models lose track of multi-step tasks and whether verified external memory can make their reasoning more reliable. Using interactive breadth-first and depth-first graph traversal as controlled test cases, I compare raw prompting, prose and structured state reminders, explicit state verification, and retained versus cleared history across Qwen and Gemma models. I built the reproducible vLLM and Slurm experiment pipeline, including fixed splits, resumable runs, trajectory logging, and metrics for completion, correctness, invalid actions, and recovery after errors.",
+		link: "https://github.com/mitu247/Task-Tracker",
+		thumbnail: "/research_setup.png",
 		year: "2025 – Present"
 	}
 ];
