@@ -11,7 +11,7 @@ export const personalInfo = {
 };
 
 export const bio = {
-	content: `I am a Machine Learning Engineer at Therap BD Ltd and a Computer Science and Engineering graduate from BUET. I work on natural language processing, computer vision, and efficient machine learning systems. Currently, I am researching how small language models handle long graph reasoning tasks with external state support and different conversation-history settings.
+	content: `I am a Machine Learning Engineer at Therap BD Ltd and a Computer Science and Engineering graduate from BUET. I work on language-model reasoning, computer vision, and reliable machine learning systems. Currently, I am researching how small language models handle long graph reasoning tasks with external state support and different conversation-history settings.
 
 I try to be honest with myself about what I understand, what I do not know yet, and where I need to improve. I enjoy learning, asking questions, and working on research that is careful and useful.`
 };
