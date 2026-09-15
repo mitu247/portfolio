@@ -131,6 +131,16 @@ export const projects = [
 
 export const research = [
 	{
+		id: 3,
+		title: "Diagnosing Small Language Models under Incremental Observations",
+		authors: "Ongoing Research Project · Collaborators: Apurbo Banik Turjo, Dr. Ch. Md. Rakin Haider",
+		venue: "Research Collaboration, BUET",
+		abstract: "Investigating why small language models lose track of multi-step tasks and whether injection from external memory state can trigger necessary recollection to steer the model toward recovery or help it reach a solution. Using interactive breadth-first and depth-first graph traversal as controlled test cases, I compare raw prompting, prose and structured state reminders, explicit state verification, and retained versus cleared history across Qwen and Gemma models. I built the reproducible vLLM and Slurm experiment pipeline, including fixed splits, resumable runs, trajectory logging, and metrics for completion, correctness, invalid actions, and recovery after errors.",
+		link: "https://github.com/mitu247/Task-Tracker",
+		thumbnail: "/research_setup.png",
+		year: "2025 – Present"
+	},
+	{
 		id: 1,
 		title: "Detection of Dengue Breeding Sites in Unplanned Urban Landscapes with Deep Learning from Remote Sensing",
 		authors: "Sushmita Paul · Collaborator: Apurbo Banik Turjo",
@@ -149,16 +159,6 @@ export const research = [
 		link: "https://github.com/mitu247/ML-Project-472",
 		thumbnail: "/LungNoduleSegmentation.png",
 		year: "2025"
-	},
-	{
-		id: 3,
-		title: "Diagnosing Small Language Models under Incremental Observations",
-		authors: "Ongoing Research Project · Collaborators: Apurbo Banik Turjo, Dr. Ch. Md. Rakin Haider",
-		venue: "Research Collaboration, BUET",
-		abstract: "Investigating why small language models lose track of multi-step tasks and whether verified external memory can make their reasoning more reliable. Using interactive breadth-first and depth-first graph traversal as controlled test cases, I compare raw prompting, prose and structured state reminders, explicit state verification, and retained versus cleared history across Qwen and Gemma models. I built the reproducible vLLM and Slurm experiment pipeline, including fixed splits, resumable runs, trajectory logging, and metrics for completion, correctness, invalid actions, and recovery after errors.",
-		link: "https://github.com/mitu247/Task-Tracker",
-		thumbnail: "/research_setup.png",
-		year: "2025 – Present"
 	}
 ];
 

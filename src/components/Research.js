@@ -5,7 +5,6 @@ const Research = () => {
   return (
     <section id="research" className="section">
       <h2 className="section-heading">Research</h2>
-      <p className="section-intro">Research spanning reliable language-model reasoning, medical image analysis, and geospatial computer vision—designed around reproducible experiments and measurable real-world outcomes.</p>
       <div className="research-list">
         {research.map((pub) => (
           <div key={pub.id} className="research-item">
