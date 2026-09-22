@@ -13,7 +13,7 @@ const ProjectItem = ({ project, card = false }) => (
       )}
     </div>
     <p className="project-desc">{project.description}</p>
-    {project.highlights && project.highlights.length > 0 && (
+    {!card && project.highlights && project.highlights.length > 0 && (
       <div className="project-highlights">
         {project.highlights.map((h, i) => (
           <span key={i} className="highlight-tag">{h}</span>

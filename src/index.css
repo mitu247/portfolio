@@ -94,8 +94,8 @@ h3 {
 
 .page-layout {
   display: grid;
-  grid-template-columns: 210px minmax(0, 1fr);
-  gap: 64px;
+  grid-template-columns: 230px minmax(0, 1fr);
+  gap: 56px;
   width: min(1040px, calc(100% - 48px));
   margin: 0 auto;
   padding: 58px 0 30px;
@@ -110,11 +110,10 @@ h3 {
 
 .profile-photo {
   display: block;
-  width: 154px;
-  height: 154px;
+  width: 190px;
+  height: auto;
   margin-bottom: 22px;
   border-radius: 8px;
-  object-fit: cover;
 }
 
 .sidebar-name {
@@ -487,8 +486,8 @@ h3 {
 
   .profile-photo {
     grid-row: 1 / span 6;
-    width: 112px;
-    height: 112px;
+    width: 124px;
+    height: auto;
     margin: 0;
   }
 
