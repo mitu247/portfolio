@@ -100,7 +100,7 @@ export const projects = [
 	{
 		id: 6,
 		title: "Computer Graphics",
-		category: "ai",
+		category: "systems",
 		description: "Built a series of rendering programs covering geometric transformations, rasterization, lighting, shading, and ray tracing. The work translates mathematical models into visual results and demonstrates proficiency with graphics algorithms and performance-conscious C++.",
 		technologies: ["C++"],
 		highlights: ["Ray Tracing", "Rendering Pipeline", "Computational Geometry"],
@@ -125,6 +125,56 @@ export const projects = [
 		technologies: ["Java", "C++"],
 		highlights: ["A* Search", "Constraint Solving", "Minimax & Pruning"],
 		link: "https://github.com/mitu247/Artificial-Intelligence-318",
+		demo: null
+	},
+	{
+		id: 9,
+		title: "Machine Learning",
+		category: "ai",
+		description: "Completed machine-learning coursework covering data preparation, model development, evaluation, and practical experimentation with supervised learning methods.",
+		technologies: ["Python", "Jupyter Notebook", "Machine Learning"],
+		highlights: ["Model Training", "Data Analysis", "Performance Evaluation"],
+		link: "https://github.com/mitu247/Machine-Learning-472",
+		demo: null
+	},
+	{
+		id: 10,
+		title: "Computer Architecture",
+		category: "systems",
+		description: "Explored computer-architecture concepts through low-level programming and implementation exercises focused on processors, memory, and the interaction between hardware and software.",
+		technologies: ["C++", "Computer Architecture"],
+		highlights: ["Processor Design", "Memory Systems", "Low-Level Programming"],
+		link: "https://github.com/mitu247/Computer-Architecture",
+		demo: null
+	},
+	{
+		id: 11,
+		title: "Microprocessors, Microcontrollers & Embedded Systems",
+		category: "systems",
+		description: "Worked with microprocessor and microcontroller fundamentals, assembly-level programming, and embedded-system design to connect software logic with hardware behavior.",
+		technologies: ["Assembly", "Microcontrollers", "Embedded Systems"],
+		highlights: ["Assembly Programming", "Hardware Interfacing", "Embedded Design"],
+		link: "https://github.com/mitu247/Microprocessors-Microcontrollers-and-Embedded-Systems-",
+		demo: null
+	},
+	{
+		id: 12,
+		title: "Data Structures",
+		category: "algorithms",
+		description: "Implemented fundamental data structures and supporting algorithms, with an emphasis on selecting suitable representations and analyzing their behavior across different problem types.",
+		technologies: ["C++", "Data Structures", "Algorithms"],
+		highlights: ["Trees & Graphs", "Hashing", "Complexity Analysis"],
+		link: "https://github.com/mitu247/Data-Structure-204-208",
+		demo: null
+	},
+	{
+		id: 13,
+		title: "Algorithm Engineering",
+		category: "algorithms",
+		description: "Studied the practical design, implementation, and evaluation of algorithms, connecting theoretical complexity with empirical performance and reproducible experimentation.",
+		technologies: ["Python", "Jupyter Notebook", "Algorithms"],
+		highlights: ["Algorithm Design", "Complexity Analysis", "Performance Benchmarking"],
+		link: "https://github.com/mitu247/Algorithm-Engineering",
 		demo: null
 	}
 ];

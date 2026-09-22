@@ -36,6 +36,10 @@ const academicGroups = [
   {
     title: 'Systems & Foundations',
     projects: projects.filter((project) => project.category === 'systems')
+  },
+  {
+    title: 'Data Structures & Algorithms',
+    projects: projects.filter((project) => project.category === 'algorithms')
   }
 ];
 
